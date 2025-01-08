@@ -24,6 +24,9 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+
+    implementation("org.openjfx:javafx-controls:18")   
+    implementation("org.openjfx:javafx-fxml:18")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -35,7 +38,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("drawsteel_backerpacket2_characterbuilder.KotlinAppKt")
+    mainClass.set("drawsteel_backerpacket2_characterbuilder.examplekt")
 }
 
 tasks.named<Test>("test") {
